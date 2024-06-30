@@ -1,14 +1,23 @@
 import { useState } from "react"
-export function TryUseState(){
-    const [counter, setCounter] = useState(0);
+import { TryProps } from "../TryProps/TrProps";
 
-    const Add = () => {
-        setCounter(10);
-    }
+export function TryUseState(){
+    const [theme, setTheme] = useState("Mode Terang");
+
+    const lightmode = () => {
+        setTheme("Mode Terang");
+    };
+
+    const darkmode = () => {
+        setTheme("Mode Gelap");
+    };
+
     return(
         <div>
-           <h1>{counter}</h1>
-           <button onClick={Add}>Ubah Nilai</button> 
+           {/* <h1>{theme}</h1> */}
+           <TryProps props={"theme"}/>
+           <button onClick={lightmode}>Mode Terang</button> 
+           <button onClick={darkmode}>Mode Gelap</button>
         </div>
-    )
+    );
 }

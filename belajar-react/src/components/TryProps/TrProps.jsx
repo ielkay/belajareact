@@ -1,7 +1,7 @@
-export function TryProps(){
+export function TryProps( { props } ) {
     return(
         <div>
-            <h1>Hello World</h1>
+            <h1>{props}</h1>
         </div>
     );
 }
