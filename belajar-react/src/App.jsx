@@ -1,15 +1,20 @@
 import './App.css'
 import { HelloWorld } from './components/HelloWorld/Helloworld'
-import { TryUseState } from './components/TryUseState/TryUseState'
+import UseComponent from './components/TryUseState/TryUseState'
 import { TryProps } from './components/TryProps/TrProps'
 import { List } from './components/List/List'
+import TestComponent from './components/TestState'
+import Pokemon from './components/Pokemon'
 function App() {
   
 
   return (
     <>
      {/* <HelloWorld /> */}
-     <List/>
+     {/* <List/> */}
+     {/* <UseComponent/> */}
+     {/* <TestComponent/> */}
+     <Pokemon/>
     </>
   );
 }

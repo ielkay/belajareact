@@ -6,7 +6,6 @@ export function List (){
 <Card name={"Mingyu"} />
 <Card name={"Wonwoo"} />
 <Card name={"Renjun"} />
-<Card name={"Jeno"} />
     </div>
     );
 }
